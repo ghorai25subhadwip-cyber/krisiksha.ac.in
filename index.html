@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>My Test Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 30px;
+        }
+
+        .box {
+            background: white;
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hello World!</h1>
+        <p>This is my test website.</p>
+    </header>
+
+    <div class="box">
+        <h2>Welcome</h2>
+        <p>This page is created only for testing GitHub Pages.</p>
+
+        <button onclick="changeText()">
+            Click Here
+        </button>
+
+        <p id="text">Nothing happened yet.</p>
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML =
+                "It works! The code has been updated successfully.";
+        }
+    </script>
+
+</body>
+</html>
